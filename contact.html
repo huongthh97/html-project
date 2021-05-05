@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ</title>
+    <link rel="stylesheet" type="text/css" href="./CSS/home.css" />
+  <link rel="stylesheet" type="text/css" href=".\css\style.css" />
+  <link
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+  />
+  <script src="./js/jquery.min.js"></script>
+  <script type="text/javascript" src="./js/coin-slider.js"></script>
+  <link
+    rel="stylesheet"
+    href="./css/coin-slider-styles.css"
+    type="text/css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+
+</head>
+<body>
+    <header>
+        <div class="wrapper" style="margin-top: 35px;">
+          <a href="#"><img src="/img/logo.jpg"> </a>
+          <div id="menu">
+            <div class="navbar">  
+              <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">
+                  <a href="index1.html"> Trang chủ </a>
+                  <!-- <i class="fa fa-caret-down"></i> -->
+                </button>
+                <!-- <div class="dropdown-content" id="myDropdown">
+                  <a href="https://vinid.net/gioi-thieu-ve-ung-dung-vinid/">Tìm hiểu về VinID </a>
+                  <a href="https://career.vinid.net/"> Tuyển dụng VinID </a>
+                  <a href="https://vinid.net/quy-che-hoat-dong/"> Quy chế hoạt động </a>
+                  <a href="https://vinid.net/cau-hoi-thuong-gap-st12/">Câu hỏi thường gặp</a>
+                </div> -->
+              </div>
+              <a href="about.html">Về VinID </a>
+            </div>
+            </div>
+          <input type="text" placeholder="What are you look for" name="search">
+          <button>Search</button>
+        </div>
+        
+      </header>
+      <div id="slide" style="margin-top: 40px" align="center">
+        <div class="mySlides fade">
+          <img
+            src="/img/slideshow_1.jpg"
+            style="width: 1050px; height: auto"
+          />
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="/img/slideshow_2.jpg"
+            style="width: 1150px; height: auto"
+          />
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="/img/slideshow_3.jpg"
+            style="width: 1150px; height: auto"
+          />
+        </div>
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(0)"></span>
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+      </div>
+    </div>
+        <div id="lien_he" style="clear: both;"> 
+            <div id="line_he_trai" style="float:left; width: 50%; margin-top: 300px ;" >
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.8842755124588!2d105.86491501398079!3d20.997275486015404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac05aaefaac7%3A0x6608b0a2f719fd41!2zVE9XRVIgMiwgNDU4IE1pbmggS2hhaSwgVsSpbmggVHV5LCBIYWkgQsOgIFRyxrBuZywgSMOgIE7hu5lpLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1620224184532!5m2!1sen!2s"
+                width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div id="lien_he_phai" style="float: right;width: 50%;margin-top: 100px">
+                <h3>Điền thông tin để chúng tôi liên hệ bạn nhé</h3>
+                <form action="/action_page.php">
+                    <label for="fname">Họ và tên *</label><br>
+                    <input type="text" id="fname" name="fname" placeholder="Nhập họ tên"><br><br>
+                    <label for="Email">Email *</label><br>
+                    <input type="text" id="Email" name="Email" placeholder="Nhập email"><br><br>
+                    <label for="Numberphone">Số điện thoại *</label><br>
+                    <input type="text" id="Numberphone" name="Numberphone" placeholder="Nhập SĐT"><br><br>
+                    <label for="help">Bạn muốn nhận được hỗ trợ *</label> <br>
+                    <select id="help" name="help">
+                        <option value="help1">Khóa / Kích hoạt tài khoản khẩn cấp</option>
+                        <option value="help2">Kiểm tra / thay đổi thông tin tài khoản </option>
+                        <option value="help3">Kiểm tra thông tin đơn hàng / giao dịch</option>
+                        <option value="help4">Báo cáo sự cố</option>
+                        <option value="help5">Tư vấn - HDSD</option>
+                        <option value="help6">Góp ý </option>
+                        <option value="help7">Đối tác và các vấn đề khác </option>
+                      </select>     <br><br>
+                    <label for="Tieudethu">Tiêu đề thư:</label><br>
+                    <input type="text" id="Tieudethu" name="Tieudethu" placeholder="Nhập tiêu đề thư"><br><br>
+                    <label for="Noidung">Nội dung:</label><br>
+                    <input type="text" id="Noidung" name="Noidung" value=""><br><br>
+                    <input type="submit" value="Submit">
+                  </form> 
+					
+				</div>				
+			</div>
+           
+            <script>
+                /* When the user clicks on the button, 
+              toggle between hiding and showing the dropdown content */
+                function myFunction() {
+                  document.getElementById("myDropdown").classList.toggle("show");
+                }
+              
+                // Close the dropdown if the user clicks outside of it
+                window.onclick = function (e) {
+                  if (!e.target.matches(".dropbtn")) {
+                    var myDropdown = document.getElementById("myDropdown");
+                    if (myDropdown.classList.contains("show")) {
+                      myDropdown.classList.remove("show");
+                    }
+                  }
+                };
+                </script>
+<script>
+    //khai báo biến slideIndex đại diện cho slide hiện tại
+    var slideIndex;
+    // KHai bào hàm hiển thị slide
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+
+      slides[slideIndex].style.display = "block";
+      dots[slideIndex].className += " active";
+      //chuyển đến slide tiếp theo
+      slideIndex++;
+      //nếu đang ở slide cuối cùng thì chuyển về slide đầu
+      if (slideIndex > slides.length - 1) {
+        slideIndex = 0;
+      }
+      //tự động chuyển đổi slide sau 5s
+      setTimeout(showSlides, 2000);
+    }
+    //mặc định hiển thị slide đầu tiên
+    showSlides((slideIndex = 0));
+
+    function currentSlide(n) {
+      showSlides((slideIndex = n));
+    }
+  </script>
+
+</body>
+</html>

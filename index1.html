@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VinID - Tiêu dùng thông minh - Đi chợ online - Thanh toán tích điểm</title>
+  <link rel="stylesheet" type="text/css" href="./CSS/home.css" />
+  <link rel="stylesheet" type="text/css" href=".\css\style.css" />
+  <link
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+  />
+  <script src="./js/jquery.min.js"></script>
+  <script type="text/javascript" src="./js/coin-slider.js"></script>
+  <link
+    rel="stylesheet"
+    href="./css/coin-slider-styles.css"
+    type="text/css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+
+</head>
+
+<body>
+  <header>
+    <div class="wrapper" style="margin-top: 35px;">
+      <a href="#"><img src="/img/logo.jpg"> </a>
+      <div id="menu">
+        <div class="navbar">  
+          <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">
+              Trang chủ <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+              <a href="https://vinid.net/gioi-thieu-ve-ung-dung-vinid/">Tìm hiểu về VinID </a>
+              <a href="https://career.vinid.net/"> Tuyển dụng VinID </a>
+              <a href="https://vinid.net/quy-che-hoat-dong/"> Quy chế hoạt động </a>
+              <a href="https://vinid.net/cau-hoi-thuong-gap-st12/">Câu hỏi thường gặp</a>
+            </div>
+          </div>
+          <a href="about.html">Về VinID </a>
+          <a href="contact.html"> Liên hệ </a>
+        </div>
+        </div>
+      <input type="text" placeholder="What are you look for" name="search">
+      <button>Search</button>
+    </div>
+    
+  </header>
+
+      
+  <div id="slide" style="margin-top: 40px" align="center">
+    <div class="mySlides fade">
+      <img
+        src="/img/slideshow_1.jpg"
+        style="width: 1050px; height: auto"
+      />
+    </div>
+    <div class="mySlides fade">
+      <img
+        src="/img/slideshow_2.jpg"
+        style="width: 1150px; height: auto"
+      />
+    </div>
+    <div class="mySlides fade">
+      <img
+        src="/img/slideshow_3.jpg"
+        style="width: 1150px; height: auto"
+      />
+    </div>
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(0)"></span>
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+  </div>
+
+
+  <script>
+    //khai báo biến slideIndex đại diện cho slide hiện tại
+    var slideIndex;
+    // KHai bào hàm hiển thị slide
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+
+      slides[slideIndex].style.display = "block";
+      dots[slideIndex].className += " active";
+      //chuyển đến slide tiếp theo
+      slideIndex++;
+      //nếu đang ở slide cuối cùng thì chuyển về slide đầu
+      if (slideIndex > slides.length - 1) {
+        slideIndex = 0;
+      }
+      //tự động chuyển đổi slide sau 5s
+      setTimeout(showSlides, 2000);
+    }
+    //mặc định hiển thị slide đầu tiên
+    showSlides((slideIndex = 0));
+
+    function currentSlide(n) {
+      showSlides((slideIndex = n));
+    }
+  </script>
+
+</div>
+<script>
+  /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function (e) {
+    if (!e.target.matches(".dropbtn")) {
+      var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains("show")) {
+        myDropdown.classList.remove("show");
+      }
+    }
+  };
+
+</script>
+
+</body>
+
+</html>
